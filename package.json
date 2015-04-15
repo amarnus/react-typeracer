@@ -1,5 +1,5 @@
 {
-  "name": "typeracer-client",
+  "name": "react-typeracer-client",
   "version": "0.1.0",
   "description": "Web client for a multi-player typing game.",
   "main": "index.js",
