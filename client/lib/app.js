@@ -6,8 +6,8 @@
   var DefaultRoute = Router.DefaultRoute;
   var NotFoundRoute = Router.NotFoundRoute;
   var RouteHandler = Router.RouteHandler;
-  var NameComponent = require('./components/EnterName');
-  var WelcomeComponent = require('./components/Welcome');
+  var NameComponent = require('./components/EnterName.jsx');
+  var WelcomeComponent = require('./components/Welcome.jsx');
   
   console.debug('...and here we go.');
   

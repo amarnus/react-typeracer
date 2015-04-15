@@ -4,7 +4,7 @@
   
   var React = require('React');
   var Dispatcher = require('../dispatcher');
-  var UserSummary = require('./UserSummary');
+  var UserSummary = require('./UserSummary.jsx');
   var CurrentUserStore = require('../stores/CurrentUserStore');
   var Loader = require('react-loader');
   
