@@ -5,6 +5,7 @@
   var React = require('React');
   var Dispatcher = require('../dispatcher');
   var $ = require('jquery');
+  var Cookie = require('cookies-js');
   
   var EnterNameComponent = React.createClass({
     
@@ -14,7 +15,7 @@
     
     componentWillMount: function() {
       var self = this;
-      if (sessionStorage.getItem('name')) {
+      if (Cookie.get('typeracer_server.sid')) {
         this.context.router.transitionTo('welcome'); 
       }
     },
@@ -24,7 +25,7 @@
       evt.preventDefault();
       var enteredName = $('form#nameForm input[name="name"]').val();
       if (enteredName.length) {
-        sessionStorage.setItem('name', enteredName);
+        // @TODO Register with the server.
         self.context.router.transitionTo('welcome');
       }
       else {
